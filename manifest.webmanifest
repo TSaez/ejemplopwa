@@ -5,7 +5,7 @@
     "short_name": "PostMe",
     "scope": "/ejemplopwa/",
     "display": "browser",
-    "start_url": "https://tsaez.github.io/ejemplopwa/",
+    "start_url": "/ejemplopwa/",
     "background_color": "#000000",
     "theme_color": "transparent",
     "description": "",
@@ -63,6 +63,5 @@
       "sizes": "16x16",
       "type": "image/png"
     }
-  ],
-    "url": "https://tsaez.github.io/ejemplopwa/"
+  ]
 }
