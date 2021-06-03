@@ -14,10 +14,10 @@
     "prefer_related_applications": false,
     "icons": [
       {
-        "src": "/images/icon/maskable_icon_x48.png",
+        "src": "src/images/icon/maskable_icon_x48.png",
         "sizes": "48x48",
         "type": "image/png",
-        "purpose": "any"
+        "purpose": "maskable"
       }
       ],
     "url": "https://tsaez.github.io/ejemplopwa/"
