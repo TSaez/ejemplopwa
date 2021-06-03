@@ -13,6 +13,12 @@
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": [
+      {
+        "src": "/images/icon/maskable_icon_x48.png",
+        "sizes": "48x48",
+        "type": "image/png",
+        "purpose": "any"
+      }
       ],
     "url": "https://tsaez.github.io/ejemplopwa/"
 }
