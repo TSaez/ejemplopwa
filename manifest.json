@@ -1,0 +1,17 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "PostMe",
+    "short_name": "PostMe",
+    "scope": "/ejemplopwa/",
+    "display": "browser",
+    "start_url": "https://tsaez.github.io/ejemplopwa/",
+    "background_color": "#000000",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [],
+    "url": "https://tsaez.github.io/ejemplopwa/"
+}
