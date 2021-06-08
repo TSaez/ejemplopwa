@@ -22,6 +22,69 @@ if ('serviceWorker' in navigator) {
   });
 }
   </script>
+  
+< script  type = "text / javascript" >
+    var custom = "myapp: // custom_url";
+    var alt = "http://mywebsite.com/alternate/content";
+    var g_intent = "intent: // scan / # Intent; esquema = zxing; paquete = com.google.zxing.client.android; end";
+    var timer;
+    var latido del corazón;
+    var iframe_timer;
+
+    function clearTimers () {
+        clearTimeout ( temporizador ) ;
+        clearTimeout ( latido del corazón ) ;
+        clearTimeout ( iframe_timer ) ;
+    }
+
+    function intervalHeartbeat () {
+        si  ( documento . webkitHidden  ||  documento . oculto ) {
+            clearTimers ( ) ;
+        }
+    }
+
+    function  tryIframeApproach ( )  {
+        var  iframe  =  documento . createElement ( "iframe" ) ;
+        iframe . estilo . border  =  "ninguno" ;
+        iframe . estilo . ancho  =  "1px" ;
+        iframe . estilo . altura  =  "1px" ;
+        iframe . onload  =  function  ( )  {
+            documento . ubicación  =  alt ;
+        } ;
+        iframe . src  =  personalizado ;
+        documento . cuerpo . appendChild ( iframe ) ;
+    }
+
+    function  tryWebkitApproach ( )  {
+        documento . ubicación  =  personalizado ;
+        timer  =  setTimeout ( function  ( )  {
+            documento . ubicación  =  alt ;
+        } ,  2500 ) ;
+    }
+
+    function  useIntent ( )  {
+        documento . ubicación  =  g_intent ;
+    }
+
+    function  launch_app_or_alt_url ( el )  {
+        latido  =  setInterval ( intervalo latido ,  200 ) ;
+        if  ( navigator . userAgent . match ( / Chrome / ) )  {
+            useIntent ( ) ;
+        }  else  if  ( navigator . userAgent . match ( / Firefox / ) )  {
+            tryWebkitApproach ( ) ;
+            iframe_timer  =  setTimeout ( function  ( )  {
+                tryIframeApproach ( ) ;
+            } ,  1500 ) ;
+        }  más  {
+            tryIframeApproach ( ) ;
+        }
+    }
+
+    $ ( ".url_origen" ) . haga clic en ( función  ( evento )  {
+        launch_app_or_alt_url ( $ ( esto ) ) ;
+        evento . preventDefault ( ) ;
+    } ) ;
+< / script>
 </head>
 <body>
   <!-- Always shows a header, even in smaller screens. -->
