@@ -20,7 +20,7 @@
 <script type="text/javascript">
     var custom = "myapp://custom_url";
     var alt = "http://mywebsite.com/alternate/content";
-    var g_intent = "intent://scan/#Intent;scheme=dummy;package=cl.klap.ali.dummyapplication;end";
+    var g_intent = "intent://scan/#Intent;scheme=app;package=cl.klap.ali.dummyapplication;end";
     var timer;
     var heartbeat;
     var iframe_timer;
@@ -81,7 +81,7 @@
 </script>
 
 <script>
-  
+
   function share() {
       console.log("23")
       if (navigator.share) {
