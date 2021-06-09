@@ -81,9 +81,7 @@
 </script>
 
 <script>
-  shareButton.addEventListener("click", () => share())
-  shareFilesButton.addEventListener("click", () => shareFiles())
-
+  
   function share() {
       console.log("23")
       if (navigator.share) {
@@ -171,8 +169,8 @@
           <input type="file" id="file" />
       </div>
       <div>
-          <button onclick="share" id="shareButton">Share</button>
-          <button onclick="shareFiles" id="shareFilesButton">Share Files</button>
+          <button onclick="share()" id="shareButton">Share</button>
+          <button onclick="shareFiles()" id="shareFilesButton">Share Files</button>
       </div>
     </div>
   </div>
