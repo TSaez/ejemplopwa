@@ -79,6 +79,7 @@
         event.preventDefault();
     });
 </script>
+
 <script>
   shareButton.addEventListener("click", () => share())
   shareFilesButton.addEventListener("click", () => shareFiles())
@@ -118,8 +119,6 @@
       }
   }
 </script>
-
-
 
 </head>
 <body>
@@ -163,13 +162,19 @@
     <div class="page-content"><!-- Your content goes here --></div>
     <div>
       <div>
+        <h2> Abrir con APP Links</h2>
+        <input type="button" value="click" onClick="launch_app_or_alt_url()" />
+    </div>
+    <div>
+      <h2> Abrir con SHARE </h2>
+      <div>
           <input type="file" id="file" />
       </div>
       <div>
-          <input type="button" value="click" onClick="launch_app_or_alt_url()" />
           <button onclick="share" id="shareButton">Share</button>
           <button onclick="shareFiles" id="shareFilesButton">Share Files</button>
       </div>
+    </div>
   </div>
   </main>
 </div>
